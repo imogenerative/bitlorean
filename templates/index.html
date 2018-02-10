@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Can Bitcoin Power the DeLorean?</title>
+        <meta name="description" content="pARAGRAPHSCan Bitcoin power the DeLorean?">
+        <meta name="author" content="Imogen Fulton">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <h1>Can Bitcoin Power the DeLorean?</h1>
+        <h1>{{ can }}</h1>
+        <h3>Bitcoin consumes {{ jigawatts }} jigaWatts of power. {{ mcfly }}</h3>
+        <p>Formula: <b><i>Implied Watts per GH/s</i></b> &#183; <b><i>Total Network Hashrate in GH/s</i></b></p>
+        <p>Source: <a href=https://digiconomist.net/bitcoin-energy-consumption>https://digiconomist.net/bitcoin-energy-consumption</a></p>
+    </body>
+</html>
