@@ -1,4 +1,4 @@
-import requests
+import os, requests
 from bs4 import BeautifulSoup
 from collections import namedtuple
 
