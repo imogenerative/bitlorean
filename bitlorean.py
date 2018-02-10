@@ -56,12 +56,12 @@ def bitLorean():
 
 #print('Bitcoin consumes %s jigaWatts of power...' % bitLorean())
 
-@app.route('/')
-def app():
+@bitlorean.route('/')
+def bitlorean():
     jigawatts = bitLorean()
 
     return render_template("index.html", jigawatts=jigawatts, can=trips(jigawatts), mcfly=marty(jigawatts))
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    bitlorean.run(host="0.0.0.0", port=port)
