@@ -56,7 +56,7 @@ def bitLorean():
 
 #print('Bitcoin consumes %s jigaWatts of power...' % bitLorean())
 
-@bitlorean.route('/')
+@app.route('/')
 def app():
     jigawatts = bitLorean()
 
